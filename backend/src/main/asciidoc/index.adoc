@@ -1,0 +1,198 @@
+ifndef::snippets[]
+:snippets: ../../../target/generated-snippets
+endif::[]
+= API Document
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 3
+:sectlinks:
+:docinfo: shared-head
+
+[[introduction]]
+== 소개
+
+Sample API
+
+[[common]]
+== 공통 사항
+
+전반적인 API 에 적용되는 사항입니다.
+
+=== Domain
+
+|===
+| 환경 | Domain
+
+| 운영서버
+| `https://sample.gravity.co.kr:10001`
+
+| 테스트서버
+| `https://test-sample.gravity.co.kr:10001`
+
+| 로컬서버
+| `http://local-sample.gravity.co.kr:10001`
+|===
+
+=== Request
+
+===== Pagination querystring prameters
+
+include::{snippets}/common/query-parameters.adoc[]
+
+=== Response
+
+include::{snippets}/common/response-fields.adoc[]
+
+include::{snippets}/common/custom-result-type-fields-codes.adoc[]
+
+
+=== 정의
+
+include::{snippets}/common/custom-enum-type-fields-species.adoc[]
+
+&#160;
+
+== 캐릭터 API
+
+[[character-find-all]]
+=== 다건 조회
+
+==== Request
+
+===== Request HTTP Example
+
+include::{snippets}/character-find-all/http-request.adoc[]
+
+==== Response
+
+include::{snippets}/character-find-all/response-fields-data.adoc[]
+
+===== Response HTTP Example
+
+include::{snippets}/character-find-all/http-response.adoc[]
+
+&#160;
+
+[[character-find-by-id]]
+=== 단건 조회
+
+==== Request
+
+include::{snippets}/character-find-by-id/path-parameters.adoc[]
+
+===== Request HTTP Example
+
+include::{snippets}/character-find-by-id/http-request.adoc[]
+
+==== Response
+
+include::{snippets}/character-find-by-id/response-fields-data.adoc[]
+
+===== Response HTTP Example
+
+include::{snippets}/character-find-by-id/http-response.adoc[]
+
+&#160;
+
+== 로켓단 API
+
+[[rocket-find-all]]
+=== 다건 조회
+
+==== Request
+
+===== Request HTTP Example
+
+include::{snippets}/rocket-find-all/http-request.adoc[]
+
+==== Response
+
+include::{snippets}/rocket-find-all/response-fields-data.adoc[]
+
+===== Response HTTP Example
+
+include::{snippets}/rocket-find-all/http-response.adoc[]
+
+&#160;
+
+== 포켓몬 API
+
+[[pokemon-find-all]]
+=== 다건 조회
+
+==== Request
+
+===== Request HTTP Example
+
+include::{snippets}/pokemon-find-all/http-request.adoc[]
+
+==== Response
+
+include::{snippets}/pokemon-find-all/response-fields-data.adoc[]
+
+===== Response HTTP Example
+
+include::{snippets}/pokemon-find-all/http-response.adoc[]
+
+&#160;
+
+[[pokemon-create]]
+=== 추가
+
+==== Request
+
+include::{snippets}/pokemon-create/request-fields.adoc[]
+
+===== Request HTTP Example
+
+include::{snippets}/pokemon-create/http-request.adoc[]
+
+==== Response
+
+===== Response HTTP Example
+
+include::{snippets}/pokemon-create/http-response.adoc[]
+
+&#160;
+
+[[pokemon-update]]
+=== 수정
+
+==== Request
+
+include::{snippets}/pokemon-update/path-parameters.adoc[]
+
+include::{snippets}/pokemon-update/request-fields.adoc[]
+
+===== Request HTTP Example
+
+include::{snippets}/pokemon-update/http-request.adoc[]
+
+==== Response
+
+===== Response HTTP Example:
+
+include::{snippets}/pokemon-update/http-response.adoc[]
+
+&#160;
+
+[[pokemon-delete]]
+=== 삭제
+
+==== Request
+
+include::{snippets}/pokemon-delete/path-parameters.adoc[]
+
+===== Request HTTP Example
+
+include::{snippets}/pokemon-delete/http-request.adoc[]
+
+==== Response
+
+===== Response HTTP Example:
+
+include::{snippets}/pokemon-delete/http-response.adoc[]
+
+&#160;
